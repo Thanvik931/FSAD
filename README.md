@@ -47,13 +47,14 @@ CREATE TABLE users (
 );
 
 📂 List of Completed Experiments
+
 ✅ Experiment 1: Hibernate Basic Insert Operation
 
 (Session 2 – Hibernate Setup and Insert User Records)
 
 Objective
 
-To build a Maven-based Hibernate project and perform insertion of user records into a MySQL database.
+To build a Maven-based Hibernate project and perform the insertion of user records into a MySQL database.
 
 Concepts Covered
 
@@ -91,6 +92,7 @@ Named parameter binding
 Result list processing
 
 ✅ Experiment 3: Fetch Records Using Hibernate Criteria Query Language (HCQL)
+
 Objective
 
 To perform the same filtering operation using Hibernate Criteria API instead of HQL.
@@ -108,7 +110,6 @@ Type-safe query execution
 Dynamic query generation
 
 ✅ Experiment 4: Spring Boot + MySQL + JPA Integration
-
 (Session 6 – Spring Boot Skill and Theory)
 
 Objective
@@ -123,7 +124,7 @@ Fetch users where:
 
 rollno >= 10
 
-name starts with "P"
+name starts with "P."
 
 Spring Data Repository Method
 List<User> findByRollnoGreaterThanEqualAndNameStartingWith(
@@ -155,6 +156,7 @@ src/main/resources
  └── application.properties (Spring Boot project)
 
 ▶️ Execution Instructions
+
 Step 1: Clone the Repository
 git clone https://github.com/your-username/your-repo-name.git
 
@@ -196,6 +198,8 @@ University: KLH University
 
 📌 Repository Status
 
-✅ All workbook experiments successfully completed
+✅ All workbook experiments completed
+
 ✅ Uploaded and maintained using GitHub
+
 ✅ Verified outputs executed in Eclipse IDE
