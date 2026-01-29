@@ -1,12 +1,14 @@
-# FSAD
-All Workbook tasks 
-Hibernate & Spring Boot Lab Experiments (Eclipse + Maven + MySQL)
+FSAD Workbooks Repository
 
-This repository contains a complete set of laboratory experiments implemented using Hibernate ORM, Hibernate Query Techniques, and Spring Boot with JPA.
+Hibernate & Spring Boot Laboratory Experiments (Eclipse + Maven + MySQL)
 
-All projects were developed in Eclipse IDE and connected with a MySQL database.
+This repository contains a complete collection of Full Stack Application Development (FSAD) workbook laboratory experiments implemented using Hibernate ORM, Hibernate Query Techniques, and Spring Boot with Spring Data JPA.
 
-📌 Tech Stack Used
+All experiments were developed in Eclipse IDE and integrated with a MySQL database for persistence and query execution.
+
+📌 Technology Stack
+
+The following tools and frameworks were used throughout the experiments:
 
 Java
 
@@ -22,13 +24,13 @@ Hibernate Query Language (HQL)
 
 Hibernate Criteria Query Language (HCQL)
 
-Spring Boot
+Spring Boot Framework
 
 Spring Data JPA
 
 ✅ Database Configuration
 
-All experiments use the same database and table setup.
+All laboratory experiments are executed using a common database schema.
 
 Database Details
 
@@ -38,7 +40,7 @@ Username: root
 
 Password: Abcdef@123
 
-Table: users
+Table Structure: users
 CREATE TABLE users (
   rollno INT PRIMARY KEY,
   name VARCHAR(50)
@@ -47,33 +49,33 @@ CREATE TABLE users (
 📂 List of Completed Experiments
 ✅ Experiment 1: Hibernate Basic Insert Operation
 
-(Session 2 Lab – Hibernate Setup + Insert Users)
+(Session 2 – Hibernate Setup and Insert User Records)
 
 Objective
 
-To create a Maven Hibernate project and insert user records into a MySQL database using Hibernate ORM.
+To build a Maven-based Hibernate project and perform insertion of user records into a MySQL database.
 
 Concepts Covered
 
-Hibernate Configuration (hibernate.cfg.xml)
+Hibernate configuration using hibernate.cfg.xml
 
-Entity Mapping (User.java)
+Entity mapping with User.java
 
-SessionFactory Setup
+SessionFactory creation and management
 
-Insert Operation using DAO
+Insert operation using DAO layer
 
-Output Example
-User inserted successfully into database.
+Sample Output
+User inserted successfully into the database.
 
-✅ Experiment 2: Fetch Users Using Hibernate Query Language (HQL)
+✅ Experiment 2: Fetch Records Using Hibernate Query Language (HQL)
 Objective
 
-To retrieve all users where:
+To retrieve user records satisfying the following conditions:
 
 rollno >= 10
 
-name starts with "P"
+name starts with the letter "P"
 
 Query Used (HQL)
 FROM User u
@@ -82,16 +84,16 @@ AND u.name LIKE :pattern
 
 Concepts Covered
 
-HQL Select Queries
+HQL-based select queries
 
-Named Parameters
+Named parameter binding
 
-Result List Processing
+Result list processing
 
-✅ Experiment 3: Fetch Users Using Hibernate Criteria Query Language (HCQL)
+✅ Experiment 3: Fetch Records Using Hibernate Criteria Query Language (HCQL)
 Objective
 
-To perform the same filtering operation using Criteria API instead of HQL.
+To perform the same filtering operation using Hibernate Criteria API instead of HQL.
 
 Criteria Conditions
 criteriaBuilder.ge(root.get("rollno"), 10);
@@ -99,15 +101,15 @@ criteriaBuilder.like(root.get("name"), "P%");
 
 Concepts Covered
 
-CriteriaBuilder
+CriteriaBuilder and Predicate usage
 
-Predicate Conditions
+Type-safe query execution
 
-Type-safe Query Execution
+Dynamic query generation
 
 ✅ Experiment 4: Spring Boot + MySQL + JPA Integration
 
-(Session 6 – Spring Boot Skill + Theory)
+(Session 6 – Spring Boot Skill and Theory)
 
 Objective
 
@@ -115,7 +117,7 @@ To develop a Spring Boot application that performs database operations using Spr
 
 Functional Requirements
 
-Insert User Records
+Insert user records
 
 Fetch users where:
 
@@ -123,24 +125,24 @@ rollno >= 10
 
 name starts with "P"
 
-Spring Repository Query Method
+Spring Data Repository Method
 List<User> findByRollnoGreaterThanEqualAndNameStartingWith(
     int rollno, String prefix
 );
 
 Concepts Covered
 
-Spring Boot Starter Projects
+Spring Boot starter project setup
 
-application.properties configuration
+Database configuration through application.properties
 
-Spring Data Repository Layer
+Repository layer abstraction
 
-Auto Query Generation
+Automatic query generation in Spring Data JPA
 
-✅ Project Structure Followed
+✅ Standard Project Structure
 
-Each project contains the standard architecture:
+Each experiment follows a structured Maven architecture:
 
 src/main/java
  ├── entity
@@ -149,24 +151,24 @@ src/main/java
  └── main application class
 
 src/main/resources
- ├── hibernate.cfg.xml (Hibernate projects)
- └── application.properties (Spring Boot)
+ ├── hibernate.cfg.xml   (Hibernate projects)
+ └── application.properties (Spring Boot project)
 
-▶️ How to Run the Projects
-Step 1: Clone Repository
+▶️ Execution Instructions
+Step 1: Clone the Repository
 git clone https://github.com/your-username/your-repo-name.git
 
-Step 2: Open in Eclipse
+Step 2: Open in Eclipse IDE
 
 File → Import → Existing Maven Project
 
-Select the project folder
+Select the project directory
 
 Step 3: Configure MySQL Database
 
-Ensure MySQL is running and database show_prk exists.
+Ensure MySQL service is running and the database show_prk is created.
 
-Step 4: Run the Application
+Step 4: Run the Applications
 
 Hibernate Projects: Run MainApp.java
 
@@ -174,25 +176,19 @@ Spring Boot Project: Run SpringBootApplication.java
 
 ✅ Learning Outcomes
 
-By completing these experiments, the following skills were achieved:
+By completing these experiments, the following competencies were gained:
 
-Hibernate ORM Setup in Maven Project
+Hibernate ORM integration in Maven-based applications
 
-Entity Mapping and Table Integration
+Entity-to-table mapping and database persistence
 
-Performing Insert and Fetch Operations
+Data retrieval using HQL and Criteria API
 
-Writing Queries using:
+Development of modern applications using Spring Boot + JPA
 
-HQL
+Repository-based query execution and abstraction
 
-Criteria API
-
-Building Modern Applications using Spring Boot + JPA
-
-Repository-based Query Execution
-
-👨‍💻 Author
+👨‍💻 Author Information
 
 Name: Sama Thanvik Reddy
 Department: Computer Science and Engineering
@@ -200,6 +196,6 @@ University: KLH University
 
 📌 Repository Status
 
-✅ All experiments successfully completed
-✅ Uploaded and managed using GitHub
-✅ Verified output in Eclipse
+✅ All workbook experiments successfully completed
+✅ Uploaded and maintained using GitHub
+✅ Verified outputs executed in Eclipse IDE
